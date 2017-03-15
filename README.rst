@@ -10,15 +10,12 @@ And then add it to your :code:`INSTALLED_APPS`
 .. code:: python
 
     INSTALLED_APPS = [
-        # your have to put this first
-        'admin_gitlog',
-
-        'django.contrib.admin',
         # ...
+        'admin_gitlog',
     ]
 
 
-How it works: I replace the `AdminSite` with a custom one and do a `git log -n 5`
+How it works: It simply overrides the default `admin.index_template` to add the info
 
 
 .. image:: https://raw.githubusercontent.com/mdamien/django-admin-gitlog/master/screenshot.png

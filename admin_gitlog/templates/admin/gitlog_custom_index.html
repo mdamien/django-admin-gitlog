@@ -1,9 +1,11 @@
 {% extends "admin/index.html" %}
 
+{% load admin_gitlog_extras %}
+
 {% block sidebar %}
     {{block.super}}
     <div>
         <h1>Last 5 commits</h1>
-        <pre>{{gitlog}}</pre>
+        <pre>{% exc_shell 'git log -n 5' %}</pre>
     </div>
 {% endblock %}
