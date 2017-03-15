@@ -11,7 +11,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-admin-gitlog',
-    version='0.1',
+    version='0.2',
     description='Display a `git log` in your admin',
     long_description=README,
     url='http://github.com/mdamien/django-admin-gitlog',
